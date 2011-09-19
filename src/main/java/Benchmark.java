@@ -1,6 +1,8 @@
 import groovy.lang.GroovyClassLoader;
 import groovy.lang.GroovyObject;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -24,6 +26,10 @@ public class Benchmark {
 
 
     public static void main(String args[]) throws Exception {
+        // AviatorEvaluator.setOptimize(AviatorEvaluator.COMPILE);
+        // AviatorEvaluator.setTrace(true);
+        // AviatorEvaluator.setTraceOutputStream(new FileOutputStream(new
+        // File("aviator.log")));
         testCompile();
         testLiteral();
         testVariableExpression();
